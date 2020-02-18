@@ -1,7 +1,12 @@
-// requirements: require db/connection as 'mongoose'
+const mongoose = require('../db/connection')
+const Schema = mongoose.Schema
 
+const Donut = new Schema({
+        name: String,
+        descriptiopn: String,
+        img: String,
+        price: Number,
+        qty: Number
+    });
 
-// create your donut schema:
-
-
-// export the donut model with module.exports
+module.exports = mongoose.model('Donut', Donut)
