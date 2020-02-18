@@ -6,8 +6,30 @@
 
 	<div id="edit-form" class="donut-container-show">
 
+		<form action="/{{donut._id}}?_method=PUT" method="POST">
+			<div>
+				<label for="name">name: </label>
+				<input type="text" name="name" value="{{donut.name}}">
+			</div>
+			<div>
+				<label for="description">description: </label>
+				<input type="text" name="description" value="{{donut.description}}">
+			</div>
+			<div>
+				<label for="img">img: </label>
+				<input type="text" name='img' value="{{donut.img}}">
+			</div>
+			<div>
+				<label for="price">price: </label>
+				<input type="number" name="price" value="{{donut.price}}">
+			</div>
+			<div>
+				<label for="qty">qty: </label>
+				<input type="number" name="qty" value="{{donut.qty}}">
+			</div>
+			<input type="submit" value="Update Donut"></inpu>
+		</form>
 
-		<<<<< YOUR WHOLE FORM GOES HERE >>>>>
 
 
 		<div id="img-preview">

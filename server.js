@@ -28,7 +28,7 @@ app.use(logger('dev'))
 //= =====================
 // Links the server to our Router File
 
-// app.use('/', donutRouter)
+app.use('/', donutRouter)
 
 const port = process.env.PORT || 3000
 app.listen(port, () => {
