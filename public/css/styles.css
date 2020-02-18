@@ -204,7 +204,8 @@ input {
 	margin-top: 5px;
 	width: 50%;
 	height: 30px;
-	font-size: 12px;
+	font-size: 18px;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 #edit-form {

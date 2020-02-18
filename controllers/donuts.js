@@ -76,8 +76,11 @@ donutRouter.put('/:id', (req, res) => {
 //= =====================
 // Create a DELETE delete route "/:id" that deletes the Donut and
 // redirects back to index page "/"
-
-
+donutRouter.delete('/:id', (req,res) => {
+    Donut.findByIdAndRemove(req.params.id).then(()=> {
+        res.redirect('/')
+    })
+})
 //= =====================
 // EXPORTS
 //= =====================
