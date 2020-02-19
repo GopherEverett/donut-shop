@@ -21,9 +21,12 @@
 		</h3>
 		<br>
 		<a href="/{{donut._id}}/edit">EDIT</a>
-		<<<< BONUS: BUTTON THAT UPDATES THE COUNT>>>>
+		<form action="/{{donut._id}}/buy?_method=PUT" method="POST">
+			<input type="submit" value="Buy Donut">
+		</form>
 	</div>
 	<form action="/{{donut._id}}?_method=DELETE" method="POST">
 		<input type="submit" value="DELETE DONUT"></input>
 	</form>
+
 </main>
